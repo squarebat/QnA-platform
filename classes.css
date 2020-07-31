@@ -1,0 +1,60 @@
+body
+{
+    font-family: 'calibri'; 
+}
+.bluebg
+{
+    background-color: #0068e8;
+}
+.center
+{
+    background-color: white;
+    margin-left: 33%;
+    margin-right: 34%;
+    margin-top: 10%;
+    border: 0px solid black;
+    border-radius: 35px;
+    text-align: center;
+    padding: 20px;
+}
+.header 
+{
+    background-color: #0068e8;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-family: 'calibri'; 
+}
+
+.topnav 
+{
+    overflow: hidden;
+    background-color: rgb(255, 127, 22);
+    font-family: 'calibri'; 
+    color: #ffffff;
+}
+
+/* Navbar links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+    background-color: #6cc8ff;
+    color: black;
+}
+
+.footer {
+  background-color: #0068e8;
+  text-align: center;
+  padding: 10px;
+  color: #ffffff;
+  font-family: 'calibri'; 
+}
+
