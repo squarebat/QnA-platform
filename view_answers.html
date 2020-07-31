@@ -1,34 +1,19 @@
 <html>
 	<head>
 		<title>Answer</title>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding"><!-- this is for removing character encoding error--> 
+
+        <script type='text/javascript' src="jQuery.min.js"></script><!-- see the change here -->
+		<script type='text/javascript'> 
+			$(function(){
+				$("#header").load("header.html"); 
+				$("#footer").load("footer.html"); 
+			});
+		</script> 
 	</head>
 	<body>
-		<table border='1'>
-			<tr>
-				<td>
-					<a href="home.html">Home</a>
-				</td>
-				<td>
-					<a href="answer.html">Answer</a>
-				</td>
-				<td>
-					<a href="ask.html">Ask a question</a>
-				</td>
-				<td>
-					<a href="blog.html">Write a Blog</a>
-				</td>
-				<td>
-					<form action="results.html" method=" ">
-						<input type="search" placeholder="Search" name="Search"/>
-						<input type="submit" value="Go"/>
-					</form>
-				</td>
-				<td>
-					<a href="index.html">Log Out</a>
-				</td>
-				
-			</tr>
-		</table>
+		<div id="header"></div>
 		<h4>This is the question for which answers are displayed. (In case you just asked this question, there will be zero answers). Blogs will also be displayed here.</h4>
 		<fieldset>
 		<p>

@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Login</title>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding"><!-- this is for removing character encoding error--> 
+
+        <script type='text/javascript' src="jQuery.min.js"></script><!-- see the change here -->
+		<script type='text/javascript'> 
+			$(function(){
+				$("#header").load("header.html"); 
+				$("#footer").load("footer.html"); 
+			});
+		</script> 
+	</head>
+	<body>
+		<h1>Login</h1>
+		<form action="home.html" method="">
+			<div>
+				<b>Username:</b>
+				<input type="text" placeholder="Enter Username" name="uname" required>
+				<br><br>
+					
+				<b>Password:</b>
+				<input type="password" placeholder="Enter Password" name="pwd" required>
+				<br><br>
+				<input type="submit" value="Login"/>
+				<br><br>
+				<input type="checkbox" checked="checked" name="remember"> Remember me			
+			</div>
+			<span> <a href="forgot.html">Forgot password?</a></span>| 
+			<span> <a href="register.html">Create an account</a></span> |
+			<span> <a href="index.html">Go back to Home</a></span>
+			<br><br>
+		</form> 
+	</body>
+</html>
