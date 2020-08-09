@@ -1,21 +1,25 @@
 <html>
     <head>
         <title>Inquisire</title>
-        <link rel="stylesheet" type="text/css" href="classes.css">
+		<link rel="stylesheet" type="text/css" href="css/classes.css">
+		<script src="js/validation.js"></script>
     </head>
     <body class="bluebg">
 		<div class='center'>
 				<h1>Login</h1>
-				<form action="home.html" method="">
+				<form>
 					<div>
+						<p style="color:green"><b>Login demo using Javascript. 
+							Correct credentials are Username: admin password: admin</b></p><br>
 						<b>Username:</b>
-						<input type="text" placeholder="Enter Username" name="uname" required>
+						<input id = "uname" type="text" placeholder="Enter Username" name="uname" required>
 						<br><br>
 							
 						<b>Password:</b>
-						<input type="password" placeholder="Enter Password" name="pwd" required>
-						<br><br>
-						<input type="submit" value="Login"/>
+						<input type="password" id="pwd" placeholder="Enter Password" name="pwd" required>
+						<br>
+						<p id="invalid" style="color:red"></p><br>
+						<button value="Login" onclick="loginValidate(); return false;">Login</button>
 						<br><br>
 						<input type="checkbox" checked="checked" name="remember"> Remember me			
 					</div>

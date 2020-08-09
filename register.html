@@ -2,31 +2,35 @@
 <html>
     <head>
         <title>Inquisire</title>
-        <link rel="stylesheet" type="text/css" href="classes.css">
+		<link rel="stylesheet" type="text/css" href="css/classes.css">
+		<script src="js/validation.js"></script>
     </head>
     <body class="bluebg">
         <div class="center">
 				<h1>Sign Up to the world of Knowledge!</h1>
-				<form action="index.html" method="">
+				<h3 style="color:green">Try entering password less than 8 characters 
+					or mismatching passwords, error message will be displayed</h3>
+				<form>
 					<div>
 						<b>Username:</b>
-						<input type="text" placeholder="Enter Username" name="uname" required>
+						<input id = "uname" type="text" placeholder="Enter Username" name="uname" required>
 						<br><br>
-						
 						<b>Email:</b>
-						<input type="email" placeholder="Enter email id" name="email" required>
+						<input id="email" type="email" placeholder="Enter email id" name="email" required>
 						<br><br>
 						
 						<b>Password:</b>
-						<input type="password" placeholder="Enter Password" name="pwd" required>
-						<br><br>
+						<input id="pwd" type="password" placeholder="Enter Password" name="pwd" required>
+						<br>
+						<p id="pass_len" style="color:red"></p>						
 						
 						<b>Confirm new Password:</b>
-						<input type="password" placeholder="Confirm Password" name="cnpd" required>
-						<br><br>
-						
-						<input type="submit" value="Register"/>
-						<br><br>
+						<input id="cpwd" type="password" placeholder="Confirm Password" name="cnpd" required>
+						<br>
+						<p id="pass_match" style="color:red"></p>						
+						<p id="success" style="color:green"></p><br>						
+						<button value="Register" onclick="regValidate(); return false;">Register</button>
+						<br>
 					</div>
 				</form> 
 				<span> <a href="login.html">Login</a></span> |
