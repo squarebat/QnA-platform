@@ -1,22 +1,53 @@
 <html>
-    <head>
-        <title></title>
-        <link rel="stylesheet" type="text/css" href="classes.css">
-    </head>
-    <body>
-        <div class="header"><h1>Inquisire.net</h1></div>
-        <div class='topnav'>
-            <a href="home.html">Home</a>
-            <a href="answer.html">Answer</a>
-            <a href="ask.html">Ask a question</a>
-            <a href="blog.html">Write a Blog</a>
-            <a href="index.html">Log Out</a>
-            <div align="right" padding="20px">
-                <form action="results.html" method=" ">
-                        <input type="search" placeholder="Search" name="Search"/>
-                        <input type="submit" value="Go"/>
-                </form>
+
+<head>
+    <title>Inquisire</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/color-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/classes.css">
+
+</head>
+
+<body>
+    <div class="header c1 c6-text">
+        <h1 class="display-4">Gist!</h1>
+    </div>
+    <nav class="c4 navbar navbar-expand-md navbar-dark  navbar-fixed-top" 
+    style="font-size: 17px;position: -webkit-sticky;position: sticky;top: 0;">
+            <div class="collapse navbar-collapse" >
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="answer.html" class="nav-link">Answer</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="ask.html">Ask a question</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Write a Blog&nbsp;&nbsp;&nbsp;</a>
+                    </li>
+                    <form class="form-inline my-2 my-lg-0">
+                        <div class="input-group">
+                            <input type="text" class="form-control" 
+                            placeholder="Search" name="search" id="search" aria-label="Search" aria-describedby="go">
+                            <div class="input-group-postpend">
+                                <button class="btn input-group-text" type="submit" id="go">Go</button>
+                            </div>
+                        </div>
+                    </form>
+                </ul>
+               
+                <ul class="navbar-nav my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Log Out</a>
+                    </li>
+                </ul>
+               
             </div>
-        </div>
-    </body>
+        </nav>
+        
+</body>
+
 </html>

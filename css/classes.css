@@ -19,11 +19,11 @@ body
 }
 .header 
 {
-    background-color: #0068e8;
+    
     text-align: left;
-    color: rgb(255, 255, 255);
+   
     padding: 20px;
-    font-family: 'calibri'; 
+    
 }
 
 .topnav 
@@ -56,6 +56,26 @@ body
   padding: 10px;
   color: #ffffff;
   font-family: 'calibri'; 
+  height: 50px;
+  margin-top: -50px;
 
 }
 
+.opacity-50
+{
+    opacity: 0.5;
+}
+
+.btn-color {
+    color: #fff !important;
+    background-color: rgb(48, 48, 48) !important;
+    /*border-color: #357ebd; /*set the color you want here*/
+}
+
+
+.btn-color:hover, .btn-color:focus, .btn-color:active, .btn-color.active, .open>.dropdown-toggle.btn-color {
+    color: #fff !important;
+    background-color: rgb(255, 16, 88) !important;
+    /*border-color: #285e8e; /*set the color you want here*/
+}
+/*.navbar{position:relative;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between;padding:0rem 0rem}*/
