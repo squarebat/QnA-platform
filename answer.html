@@ -1,28 +1,40 @@
 <html>
-	<head>
-		<title>Answer this question</title>
-		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-        <meta content="utf-8" http-equiv="encoding"><!-- this is for removing character encoding error--> 
 
-        <script type='text/javascript' src="js/jQuery.min.js"></script><!-- see the change here -->
-		<script type='text/javascript'> 
-			$(function(){
-				$("#header").load("header.html"); 
-				$("#footer").load("footer.html"); 
-			});
-		</script> 
-	</head>
-	<body>
-		<div id="header"></div>
-		
-		<h1>This is the question. Can you please answer it?</h1>
-		<form action="view_answers.html" method="">
-			<textarea rows="10" cols= "30" placeholder="Your answer here..." name="ans"></textarea>
-			<br><br>
-			<input type="submit" value="Submit your answer"/>
-		</form>
-		<footer>
-			<div id="footer"></div>
-		</footer> 
-	</body>
+<head>
+	<title>Gist</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+
+	<script type='text/javascript' src="js/jQuery.min.js"></script>
+	<script type='text/javascript'> 
+		$(function () {
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/classes.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/color-theme.css">
+
+</head>
+
+<body>
+	<div id="header"></div>
+	<div class="row" style="margin: auto">
+		<div class="col-sm-3 c8">
+ 
+		 </div>
+		 <div class="col-sm-9">
+	<h1>This is the question. Can you please answer it?</h1>
+	<form action="view_answers.html" method="">
+		<textarea rows="10" cols="30" placeholder="Your answer here..." name="ans"></textarea>
+		<br>
+		<br>
+		<input type="submit" value="Submit your answer" />
+	</form></div></div>
+	<footer>
+		<div id="footer"></div>
+	</footer>
+</body>
+
 </html>
