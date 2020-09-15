@@ -2,6 +2,14 @@ body
 {
     font-family: 'calibri'; 
 }
+.show
+{
+    display: inline-block;
+}
+.hide
+{
+    display: inline-block;
+}
 .bluebg
 {
     background-color: #0068e8;
